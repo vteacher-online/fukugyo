@@ -1,0 +1,67 @@
+{
+  "_comment": "このファイルを .fukugyo/config.json にコピーして編集してください",
+  "me": {
+    "name": "山田太郎",
+    "address": "〒150-0001 東京都渋谷区...",
+    "email": "yamada@example.com",
+    "phone": "090-0000-0000",
+    "bank": {
+      "bank_name": "○○銀行",
+      "branch_name": "○○支店",
+      "account_type": "普通",
+      "account_number": "1234567",
+      "account_holder": "ヤマダ タロウ"
+    },
+    "invoice_number": "T1234567890123"
+  },
+  "slack": {
+    "_comment": "Slack Bot Token は config.json には書きません。Claude Code の MCP 設定ファイルに書きます（README参照）",
+    "my_user_id": "UXXXXXXXX",
+    "channels": {
+      "CXXXXXXXX": "株式会社A",
+      "CYYYYYYYY": "株式会社B"
+    }
+  },
+  "freee": {
+    "_comment": "freee MCPを使う場合に設定。npx freee-mcp configure で自動設定される",
+    "enabled": false,
+    "company_id": null,
+    "item_name": "業務委託費",
+    "tax_code": 1
+  },
+  "payment_check_url": "",
+  "_payment_check_url_examples": {
+    "_comment": "よく使われる口座確認URL。該当するものを payment_check_url にコピーしてください",
+    "freee":      "https://secure.freee.co.jp/",
+    "三菱UFJ":    "https://entry11.bk.mufg.jp/ibg/dfw/APLIN/loginib/login?_TRANID=AA000_001",
+    "三井住友":   "https://direct.smbc.co.jp/aib/aibgsjsf/pdFnLogin.do",
+    "みずほ":     "https://web.ib.mizuhobank.co.jp/servlet/LOGBNK0000000B.do",
+    "ゆうちょ":   "https://account.jp-bank.japanpost.jp/LogIn.do",
+    "楽天銀行":   "https://login.rakuten-bank.co.jp/",
+    "PayPay銀行": "https://direct.paypay-bank.co.jp/",
+    "住信SBI":    "https://www.netbk.co.jp/contents/lineup/sougou/",
+    "auじぶん":   "https://ib.jibunbank.co.jp/pc/antifraud/login.html"
+  },
+  "clients": {
+    "株式会社A": {
+      "address": "〒100-0001 東京都千代田区...",
+      "hourly_rate": 5000,
+      "freee_partner_id": null
+    },
+    "株式会社B": {
+      "address": "〒530-0001 大阪府大阪市...",
+      "hourly_rate": 6000,
+      "freee_partner_id": null
+    }
+  },
+  "url_patterns": [
+    { "pattern": "github.com/client-a",    "client": "株式会社A" },
+    { "pattern": "client-a.atlassian.net", "client": "株式会社A" },
+    { "pattern": "client-b.vercel.app",    "client": "株式会社B" },
+    { "pattern": "figma.com/file/XXXXX",   "client": "株式会社B" }
+  ],
+  "checkin_keywords":  ["おはよう", "おはようございます", "出勤", "始めます"],
+  "checkout_keywords": ["おつかれ", "おつかれさまでした", "退勤", "終わります", "上がります"],
+  "default_payment_terms": "月末締め翌月末払い",
+  "default_tax_rate": 0.10
+}
