@@ -71,6 +71,8 @@ FUKUGYO_SLACK_DATA='{"株式会社A":{"checkin":"2026-03-04T09:12:00","checkout"
   python3 scripts/timecard.py today
 ```
 
+Slack MCPが利用できる場合であっても `invalid_auth` などでerrorになる場合は、curlで取得する。
+
 Slack MCPが利用できない場合は環境変数をセットせずに `python3 scripts/timecard.py today` を実行する。
 timecard.py 側で「Slack MCP 未接続」と表示し、Chrome履歴のみで処理を続ける。
 
