@@ -76,7 +76,7 @@ npx skills add vteacher-online/fukugyo/skills/timecard -a claude-code
 Claude Code を開いて、以下を入力してください：
 
 ```
-/fukugyo/fukugyo-setup
+/fukugyo
 ```
 
 質問が順番に出てくるので、答えていくだけです。
