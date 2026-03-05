@@ -1,7 +1,10 @@
 # fukugyo — 副業・フリーランスの雑務をAIに任せる
 
 「今月何時間働いた？」「請求書どう作る？」「振り込まれてない…」
+
 そういう面倒ごとを、AIにやってもらうためのClaude Code用スキルです。
+
+https://zenn.dev/rgbkids/articles/624ad4e07c468a
 
 ## fukugyo のフロー（1ヶ月のスケジュール）
 
